@@ -1,0 +1,2 @@
+# MozDevzTraining
+Django + React Training
