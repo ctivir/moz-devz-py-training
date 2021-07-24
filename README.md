@@ -15,5 +15,4 @@ pip install django
 pip install djangorestframework django-cors-headers
 
 4. Run migrations 
-python manage.py makemigrations mozdevzsite
 python manage.py migrate mozdevzsite
