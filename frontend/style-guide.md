@@ -7,12 +7,13 @@ The designs were created to the following widths:
 - Mobile: 375px
 - Desktop: 1440px
 
-## Colors
+****## Colors
 
-- --gunmetal: hsla(201, 15%, 22%, 1);
-- --white: hsla(0, 0%, 100%, 1); 
-- --permanent-geranium-lake: hsla(358, 75%, 50%, 1);
-- --imperial-red: hsla(358, 75%, 55%, 1); 
+- --dark: hsl(345, 6%, 13%);
+- --white: hsla(0, 0%, 100%, 1);
+- --light-grey: hsl(0, 0%, 93%)
+- --primary: hsla(358, 75%, 50%, 1);
+- --secondary: hsla(358, 75%, 55%, 1); 
 
 ## Typography
 
