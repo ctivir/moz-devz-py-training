@@ -1,0 +1,13 @@
+.header {
+  background: var(--white);
+  padding: 2rem 2rem;
+  box-shadow: 5px 5px 5px -1px var(--light-grey);
+}
+
+.nav {}
+
+.logoLink {}
+
+.logo {
+  width: 100px;
+}
