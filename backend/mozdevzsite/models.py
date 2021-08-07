@@ -18,3 +18,12 @@ class Geral(models.Model):
 
     def __str__(self):
         return self.quemSomos
+
+
+class Embassador(models.Model):
+    name = models.CharField(max_length=250)
+    site = models.CharField(max_length=250)
+    logo = models.CharField(max_length=250)
+
+    def __str__(self):
+        return self.name
