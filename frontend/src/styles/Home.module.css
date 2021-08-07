@@ -46,6 +46,28 @@
 
 .statsContainer {}
 
+.weLearn {}
+
+.cover {}
+
+.coverImage {
+  width: 100%;
+}
+
+.article {
+  text-align: center;
+  padding: 2rem;
+}
+
+.articleTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.articleText {
+  font-size: small;
+  margin-bottom: 1rem;
+}
 
 @media (min-width: 720px) {
   .hero {
@@ -102,5 +124,19 @@
     display: flex;
     justify-content: space-between;
     gap: 6rem;
+  }
+
+  .weLearn {
+    display: flex;
+    text-align: left;
+  }
+  
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 6rem;
+    text-align: left;
   }
 }
