@@ -1,13 +1,13 @@
 import styles from '../styles/Home.module.css'
 import hero from '../assets/cover.svg'
 import coding from '../assets/icons/programing.svg'
+import Header from '../components/Header'
 import StatsItem from '../components/StatsItem'
 
 function Home() {
   return (
     <div className={styles.home}>
-      <h1>Home</h1>
-
+      <Header />
       <section className={styles.hero}>
         <aside className={styles.heroDescription}>
           <h1 className={styles.heroTitle}>
