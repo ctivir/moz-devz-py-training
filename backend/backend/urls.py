@@ -22,6 +22,9 @@ from mozdevzsite import views
 router = routers.DefaultRouter()
 router.register(r'programs', views.ProgramView, 'program')
 router.register(r'gerals', views.GeralView, 'geral')
+router.register(r'embassador', views.EmbassadorView, 'embassador')
+router.register(r'contacts', views.ContactView, 'contact')
+router.register(r'persons', views.PersonView, 'person')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

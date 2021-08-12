@@ -1,10 +1,11 @@
 from django.db import models
-
+from .choices import TEAM_CHOICES
 
 # Create your models here.
 class Program(models.Model):
-    title = models.CharField(max_length=120)
+    title       = models.CharField(max_length=120)
     description = models.TextField()
+    logo        = models.CharField(max_length=250)
 
     def _str_(self):
         return self.title
@@ -27,3 +28,23 @@ class Embassador(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Contact(models.Model):
+    email   = models.EmailField()
+    subject = models.CharField(max_length=255)
+    message = models.TextField()
+
+    def __str__(self):
+        return self.email
+
+
+class Person(models.Model):
+    fullname   = models.CharField(max_length=100) 
+    team       = models.CharField(choices=TEAM_CHOICES, blank=False, 
+                                    null=False, default='Embassador', max_length=30)
+    ocupation  = models.CharField(max_length=30)
+    picture    = models.CharField(max_length=250)
+
+    def __str__(self):
+        return self.fullname

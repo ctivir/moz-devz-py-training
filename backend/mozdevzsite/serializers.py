@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Program, Geral, Embassador
+from .models import Program, Geral, Embassador, Contact, Person
 
 
 class ProgramSerializer(serializers.ModelSerializer):
@@ -17,4 +17,16 @@ class GeralSerializer(serializers.ModelSerializer):
 class EmbassadorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Embassador
-        filds = ('name', 'site', 'logo')
+        fields = ('id', 'name', 'site', 'logo')
+
+
+class ContactSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Contact
+        fields = ('id', 'email', 'subject', 'message')
+
+
+class PersonSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Person
+        fields = ('id', 'fullname', 'team', 'ocupation', 'picture')
