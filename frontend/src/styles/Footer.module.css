@@ -1,0 +1,42 @@
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+  background: var(--dark);
+  color: var(--white);
+  padding: 2rem;
+}
+
+.footer a{
+  color: var(--white);
+  text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.footer li{
+    display: grid;
+}
+
+.logoLink {
+}
+
+.logo {
+  margin-top: -50px;
+  width: 150px;
+}
+
+.links a{
+  padding: 4px 10px;
+}

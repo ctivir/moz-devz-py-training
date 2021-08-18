@@ -2,12 +2,31 @@
   background: var(--white);
   padding: 2rem;
   box-shadow: 5px 5px 5px -1px var(--light-grey);
+  display: flex;
+  width: 100%;
 }
 
-.nav {}
+a {
+    padding: 4px 10px;
+}
+
+.nav ul{}
+
+.nav li{}
 
 .logoLink {}
 
 .logo {
   width: 100px;
+}
+
+.left,
+.right {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.center {
+  flex-basis: 0;
+  flex-grow: 2;
 }

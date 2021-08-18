@@ -56,4 +56,10 @@
   }
 
   /* Stats */
+  .stats{
+    background: var(--light-grey);
+    text-align: center;
+    padding: 2rem .5rem;
+  }
+
 }
