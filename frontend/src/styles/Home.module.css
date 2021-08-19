@@ -136,18 +136,14 @@
   /* Learn Section */
   .learn {
     display: flex;
-    height: 25rem;
+    height: 22rem;
     margin-bottom: 10rem;
-    outline: 1px solid red;
   }
 
-
-  /* TODO: Make the image to fill the given height */
-  .learnCover {
+  .learnImage {
     object-fit: cover;
+    height: 100%;
   }
-  
-  .learnImage {}
 
   .learnDescription {
     text-align: left;
@@ -157,5 +153,12 @@
   .learnTittle {
     width: 20ch;
     font-size: 2rem;
+  }
+
+  .learnText {
+    width: 80%;
+    font-size: .9rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
   }
 }
