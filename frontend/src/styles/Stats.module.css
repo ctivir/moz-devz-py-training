@@ -1,0 +1,44 @@
+/* Stats Item */
+
+.statsItem {
+	display: flex;
+	gap: 2rem;
+	margin-bottom: 1rem;
+}
+
+.statsTitle {
+	font-size: 3rem;
+}
+
+.bar {
+	display: block;
+	background: var(--primary);
+	width: 100%;
+	height: .3rem;
+}
+
+.statsText {
+	font-size: .6rem;
+}
+
+@media (min-width: 720px) {
+	.statsItem {
+		display: block;
+	}
+
+	.statsTitle {
+		font-size: 4rem;
+		margin-bottom: 1rem;
+	}
+
+	.bar {
+		display: block;
+		background: var(--primary);
+		width: 100%;
+		height: .3rem;
+	}
+
+	.statsText {
+		font-size: .8rem;
+	}
+}

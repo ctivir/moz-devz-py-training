@@ -33,7 +33,8 @@ function Home() {
         {/* Description */}
         <aside className={styles.statsDescription}>
           <h2 className={styles.statsTitle}>
-            Impactamos milhares de devz
+            Impactamos milhares de
+            <span className='highlight'> devz </span>
             e impulsionamos carreiras
           </h2>
           <i className={styles.codingIcon}>
