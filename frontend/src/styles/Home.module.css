@@ -46,6 +46,30 @@
   display: none;
 }
 
+/* Learn Section */
+.learn {}
+
+.learnCover {}
+
+.learnImage {
+  width: 100%;
+}
+
+.learnDescription {
+  padding: 2rem;
+  text-align: center;
+}
+
+.learnTittle {
+  margin-bottom: 1rem;
+}
+
+.learnText {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+
+
 /* Desktop Styles */
 @media (min-width: 720px) {
   /* Hero */
@@ -107,5 +131,31 @@
   .statsContainer {
     display: flex;
     gap: 8rem;
+  }
+
+  /* Learn Section */
+  .learn {
+    display: flex;
+    height: 25rem;
+    margin-bottom: 10rem;
+    outline: 1px solid red;
+  }
+
+
+  /* TODO: Make the image to fill the given height */
+  .learnCover {
+    object-fit: cover;
+  }
+  
+  .learnImage {}
+
+  .learnDescription {
+    text-align: left;
+    padding: 3rem;
+  }
+
+  .learnTittle {
+    width: 20ch;
+    font-size: 2rem;
   }
 }

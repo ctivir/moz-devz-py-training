@@ -82,21 +82,21 @@ function Home() {
         </aside>
       </section>
 
-      <section className={styles.hero}>
+      <section className={styles.learn}>
         {/* Cover */}
-        <aside className={styles.heroCover}>
+        <aside className={styles.learnCover}>
           <img
-            className={styles.coverImage}
+            className={styles.learnImage}
             src={mozdevz}
             alt='Comunidade Mozdevz'
           />
         </aside>
 
-        <aside className={styles.heroDescription}>
-          <h1 className={styles.heroTitle}>
+        <aside className={styles.learnDescription}>
+          <h1 className={styles.learnTittle}>
             Aprendemos em comunidade
           </h1>
-          <p>
+          <p className={styles.learnText}>
             Proporcionamos oportunidades de partilha de
             conhecimento e desenvolvimento de habilidades
             para a criação de produtos digitais a jovens
