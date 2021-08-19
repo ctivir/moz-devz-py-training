@@ -5,28 +5,3 @@
   display: flex;
   width: 100%;
 }
-
-a {
-    padding: 4px 10px;
-}
-
-.nav ul{}
-
-.nav li{}
-
-.logoLink {}
-
-.logo {
-  width: 100px;
-}
-
-.left,
-.right {
-  flex-basis: 0;
-  flex-grow: 1;
-}
-
-.center {
-  flex-basis: 0;
-  flex-grow: 2;
-}

@@ -1,12 +1,9 @@
+import cover from '../assets/cover.svg';
+import codingIcon from '../assets/icons/programing.svg';
+import mozdevz from '../assets/mozdevz.jpg';
 import Header from '../components/Header';
-import StatsItem from '../components/StatsItem'
-// import LearnItem from '../components/LearnItem'
-// import ConnectionItem from '../components/ConnectionItem'
-import Footer from '../components/Footer'
+import StatsItem from '../components/StatsItem';
 import styles from '../styles/Home.module.css';
-import cover from '../assets/cover.svg'
-import mozdevzc from '../assets/mozdevz.jpg'
-import codingIcon from '../assets/icons/programing.svg'
 
 
 function Home() {
@@ -51,29 +48,45 @@ function Home() {
         <aside className={styles.statsContainer}>
           <StatsItem
             title={'5000'}
-            text={'Pessoas sensibilizadas atraves de eventos educacionais e partilha de experiencia'}
+            text={
+              `Pessoas sensibilizadas 
+               atraves de eventos educacionais 
+               e partilha de experiencia`
+            }
           />
           <StatsItem
             title={'+800'}
-            text={'Pessoas sensibilizadas atraves de eventos educacionais e partilha de experiencia'}
+            text={
+              `Pessoas sensibilizadas 
+               atraves de eventos educacionais 
+               e partilha de experiencia`
+            }
           />
           <StatsItem
             title={'+800'}
-            text={'Pessoas sensibilizadas atraves de eventos educacionais e partilha de experiencia'}
+            text={
+              `Pessoas sensibilizadas 
+               atraves de eventos educacionais 
+               e partilha de experiencia`
+            }
           />
           <StatsItem
             title={'+100'}
-            text={'Pessoas sensibilizadas atraves de eventos educacionais e partilha de experiencia'}
+            text={
+              `Pessoas sensibilizadas 
+               atraves de eventos educacionais 
+               e partilha de experiencia`
+            }
           />
         </aside>
       </section>
 
       <section className={styles.hero}>
-       {/* Cover */}
+        {/* Cover */}
         <aside className={styles.heroCover}>
           <img
             className={styles.coverImage}
-            src={mozdevzc}
+            src={mozdevz}
             alt='Comunidade Mozdevz'
           />
         </aside>
@@ -82,15 +95,17 @@ function Home() {
           <h1 className={styles.heroTitle}>
             Aprendemos em comunidade
           </h1>
-          <p>Proporcionamos oportunidades de partilha de conhecimento e desenvolvimento de habilidades para a criação de produtos digitais a jovens durante o period de formação e contribuimos para o desenvolvimento da sociedade atraves das soluções desenvolvidas.
+          <p>
+            Proporcionamos oportunidades de partilha de
+            conhecimento e desenvolvimento de habilidades
+            para a criação de produtos digitais a jovens
+            durante o period de formação e contribuimos
+            para o desenvolvimento da sociedade atraves
+            das soluções desenvolvidas.
           </p>
           <button>Saiba Mais</button>
         </aside>
       </section>
-
-
-      <Footer />
-
     </div>
   )
 }
