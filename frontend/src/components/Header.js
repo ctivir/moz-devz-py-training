@@ -4,7 +4,7 @@ import logo from '../assets/logo.png'
 function Header() {
   return (
     <header className={styles.header}>
-      <nav className={styles.left}>
+      <mav className={styles.nav}>
         <a className={styles.logoLink} href='/'>
           <img
             className={styles.logo}
@@ -12,7 +12,7 @@ function Header() {
             alt='Comunidade Mozdevz'
           />
         </a>
-      </nav>
+      </mav>
     </header>
   )
 }
