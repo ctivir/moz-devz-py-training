@@ -5,6 +5,7 @@ import FeatureContainer from '../components/FeatureContainer';
 import Header from '../components/Header';
 import StatsItem from '../components/StatsItem';
 import styles from '../styles/Home.module.css';
+import SponsorsContainer from '../components/SponsorsContainer';
 
 
 function Home() {
@@ -123,6 +124,23 @@ function Home() {
 
         {/* Container */}
         <FeatureContainer />
+      </section>
+
+      {/* Sponsors */}
+      <section className={styles.sponsors}>
+        {/* Description */}
+        <aside className={styles.sponsorsDescription}>
+          <h2 className={styles.sponsorsTitle}>
+            Parceiros
+          </h2>
+          <span className={styles.sponsorsHightlight}>
+            Responsaveis pelo apoio e suporte da
+            comunidade
+          </span>
+        </aside>
+
+        {/* Container */}
+        <SponsorsContainer />
       </section>
     </div>
   )

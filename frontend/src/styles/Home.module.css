@@ -114,6 +114,38 @@
   font-size: .8rem;
 }
 
+/* Sponsors Section */
+.sponsors {
+  padding: 2rem;
+}
+.sponsorsDescription {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.sponsorsTitle {
+  line-height: 1.7;
+}
+
+.sponsorsHightlight {
+  font-size: .8rem;
+}
+
+/* TODO: fix the space that appears on 414 width mobile device */
+.sponsorsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.sponsorsCard {
+  flex-basis: 80px;
+  border: 1px solid var(--primary);
+}
+
+.sponsorsImage {
+  width: 80px;
+}
+
 /* Desktop Styles */
 @media (min-width: 720px) {
   /* Hero */
@@ -242,5 +274,31 @@
   
   .featureContainerText {
     font-size: .8rem;
+  }
+
+  /* Sponsors Section */
+  .sponsors {
+    padding: 4rem;
+  }
+
+  .sponsorsDescription {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
+  /* TODO: Look a proper solution for this view */
+  .sponsorsContainer {
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .sponsorsCard {
+    flex-basis: 150px;
+  }
+
+  .sponsorsImage {
+    width: 150px;
   }
 }
