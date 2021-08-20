@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import StatsItem from '../components/StatsItem';
 import styles from '../styles/Home.module.css';
 import SponsorsContainer from '../components/SponsorsContainer';
+import Footer from '../components/Footer';
 
 
 function Home() {
@@ -142,6 +143,9 @@ function Home() {
         {/* Container */}
         <SponsorsContainer />
       </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   )
 }
