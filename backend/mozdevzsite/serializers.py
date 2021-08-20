@@ -5,7 +5,7 @@ from .models import Program, Geral, Embassador, Contact, Person
 class ProgramSerializer(serializers.ModelSerializer):
     class Meta:
         model = Program
-        fields = ('id', 'title', 'description', 'logo')
+        fields = ('id', 'title', 'description')
 
 
 class GeralSerializer(serializers.ModelSerializer):
