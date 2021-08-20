@@ -35,5 +35,5 @@ static3==0.7.0
 todo==0.1
 urllib3==1.26.2
 Werkzeug==1.0.1
-gunicorn
-psycopg2
+gunicorn==20.0.4
+psycopg2-binary==2.8.6
