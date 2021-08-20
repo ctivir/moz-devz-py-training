@@ -21,7 +21,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: var(--secondary);
 }
 
@@ -33,4 +34,8 @@ html, body {
   color: var(--dark);
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
+}
+
+.highlight {
+  color: var(--primary);
 }

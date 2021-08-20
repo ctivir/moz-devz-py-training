@@ -1,5 +1,7 @@
+/* Home */
 .home {}
 
+/* Hero */
 .hero {
   display: flex;
   flex-direction: column;
@@ -25,6 +27,126 @@
   width: 80%;
 }
 
+/* Stats */
+.stats{
+  background: var(--light-grey);
+  padding: 2rem;
+}
+
+.statsDescription {
+  margin-bottom: 2rem;
+}
+
+.statsTitle {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.codingIcon {
+  display: none;
+}
+
+/* Learn Section */
+.learn {}
+
+.learnCover {}
+
+.learnImage {
+  width: 100%;
+}
+
+.learnDescription {
+  padding: 2rem;
+  text-align: center;
+}
+
+.learnTittle {
+  margin-bottom: 1rem;
+}
+
+.learnText {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+
+/* Feature Section */
+.feature {
+  padding: 2rem;
+  background: var(--light-grey);
+  text-align: center;
+}
+
+.featureDescription {
+  margin-bottom: 2rem;
+}
+
+.featureTitle {
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+.featureHightlight {
+  font-size: .6rem;
+  color: var(--primary);
+}
+
+.featureContainer {}
+
+.featureCard {
+  padding: 1.5rem;
+  margin-bottom: 2em;
+  background: var(--white);
+  box-shadow: 5px 5px var(--primary);
+}
+
+/* TODO: change svg colors to the primary color */
+.featureIcon {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.featureContainerTitle {
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+.featureContainerText {
+  font-size: .8rem;
+}
+
+/* Sponsors Section */
+.sponsors {
+  padding: 2rem;
+}
+.sponsorsDescription {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.sponsorsTitle {
+  line-height: 1.7;
+}
+
+.sponsorsHightlight {
+  font-size: .8rem;
+}
+
+/* TODO: fix the space that appears on 414 width mobile device */
+.sponsorsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.sponsorsCard {
+  flex-basis: 80px;
+  border: 1px solid var(--primary);
+}
+
+.sponsorsImage {
+  width: 80px;
+}
+
+/* Desktop Styles */
 @media (min-width: 720px) {
   /* Hero */
   .hero {
@@ -56,4 +178,127 @@
   }
 
   /* Stats */
+  .stats {
+    padding: 4rem;
+  }
+
+  /* Stats Description */
+  .statsDescription {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .statsTitle {
+    width: 25ch;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .codingIcon {
+    display: block;
+  }
+
+  .codingIcon > img {
+    width: 5rem;
+  }
+
+  /* Stats Container */
+  .statsContainer {
+    display: flex;
+    gap: 8rem;
+  }
+
+  /* Learn Section */
+  .learn {
+    display: flex;
+    height: 22rem;
+  }
+
+  .learnImage {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .learnDescription {
+    text-align: left;
+    padding: 3rem;
+  }
+
+  .learnTittle {
+    width: 20ch;
+    font-size: 2rem;
+  }
+
+  .learnText {
+    width: 80%;
+    font-size: .9rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  
+  /* Feature Section */
+  .feature {
+    padding: 4rem;
+  }
+
+  .featureDescription {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .featureTitle {
+    text-align: left;
+    width: 12ch;
+    line-height: 1.4;
+  }
+
+  .featureHightlight {
+    font-size: .9rem;
+  }
+
+  .featureContainer {
+    display: flex;
+    gap: 6rem;
+  }
+
+  .featureCard {
+    text-align: left;
+    border: 1px solid var(--primary);
+    box-shadow: 6px 6px var(--primary);
+  }
+
+  .featureContainerTitle {
+    font-size: 1.8rem;
+    margin-bottom: unset;
+  }
+  
+  .featureContainerText {
+    font-size: .8rem;
+  }
+
+  /* Sponsors Section */
+  .sponsors {
+    padding: 4rem;
+  }
+
+  .sponsorsDescription {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
+  /* TODO: Look a proper solution for this view */
+  .sponsorsContainer {
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .sponsorsCard {
+    flex-basis: 150px;
+  }
+
+  .sponsorsImage {
+    width: 150px;
+  }
 }
