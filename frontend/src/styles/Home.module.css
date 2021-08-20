@@ -69,6 +69,50 @@
   margin-bottom: 1rem;
 }
 
+/* Feature Section */
+.feature {
+  padding: 2rem;
+  background: var(--light-grey);
+  text-align: center;
+}
+
+.featureDescription {
+  margin-bottom: 2rem;
+}
+
+.featureTitle {
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+.featureHightlight {
+  font-size: .6rem;
+  color: var(--primary);
+}
+
+.featureContainer {}
+
+.featureCard {
+  padding: 1.5rem;
+  margin-bottom: 2em;
+  background: var(--white);
+  box-shadow: 5px 5px var(--primary);
+}
+
+/* TODO: change svg colors to the primary color */
+.featureIcon {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.featureContainerTitle {
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+.featureContainerText {
+  font-size: .8rem;
+}
 
 /* Desktop Styles */
 @media (min-width: 720px) {
@@ -106,7 +150,6 @@
     padding: 4rem;
   }
 
-
   /* Stats Description */
   .statsDescription {
     display: flex;
@@ -137,7 +180,6 @@
   .learn {
     display: flex;
     height: 22rem;
-    margin-bottom: 10rem;
   }
 
   .learnImage {
@@ -160,5 +202,45 @@
     font-size: .9rem;
     line-height: 1.7;
     margin-bottom: 1rem;
+  }
+  
+  /* Feature Section */
+  .feature {
+    padding: 4rem;
+  }
+
+  .featureDescription {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .featureTitle {
+    text-align: left;
+    width: 12ch;
+    line-height: 1.4;
+  }
+
+  .featureHightlight {
+    font-size: .9rem;
+  }
+
+  .featureContainer {
+    display: flex;
+    gap: 6rem;
+  }
+
+  .featureCard {
+    text-align: left;
+    border: 1px solid var(--primary);
+    box-shadow: 6px 6px var(--primary);
+  }
+
+  .featureContainerTitle {
+    font-size: 1.8rem;
+    margin-bottom: unset;
+  }
+  
+  .featureContainerText {
+    font-size: .8rem;
   }
 }

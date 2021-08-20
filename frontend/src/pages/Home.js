@@ -1,6 +1,7 @@
 import cover from '../assets/cover.svg';
 import codingIcon from '../assets/icons/programing.svg';
 import mozdevz from '../assets/mozdevz.jpg';
+import FeatureContainer from '../components/FeatureContainer';
 import Header from '../components/Header';
 import StatsItem from '../components/StatsItem';
 import styles from '../styles/Home.module.css';
@@ -82,6 +83,7 @@ function Home() {
         </aside>
       </section>
 
+      {/* Learn Section */}
       <section className={styles.learn}>
         {/* Cover */}
         <aside className={styles.learnCover}>
@@ -106,6 +108,21 @@ function Home() {
           </p>
           <button>Saiba Mais</button>
         </aside>
+      </section>
+
+      <section className={styles.feature}>
+        {/* Description */}
+        <aside className={styles.featureDescription}>
+          <h2 className={styles.featureTitle}>
+            Conexão e Integração
+          </h2>
+          <span className={styles.featureHightlight}>
+            Experiência - Tecnologia - Conexão
+          </span>
+        </aside>
+
+        {/* Container */}
+        <FeatureContainer />
       </section>
     </div>
   )
