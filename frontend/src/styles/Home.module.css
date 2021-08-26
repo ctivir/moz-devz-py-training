@@ -48,7 +48,9 @@
   display: none;
 }
 
-/* Stats Container - Stats Item */
+/* Stats Container / Stats Item */
+.statsContainer {}
+
 .statsItem {
   display: flex;
   gap: 2rem;
@@ -61,8 +63,7 @@
 
 .bar {
   display: block;
-  background: var(--primary);
-  width: 100%;
+  background-color: var(--primary);
   height: .3rem;
 }
 
@@ -106,17 +107,17 @@
     padding: 4rem;
   }
 
+  .codingIcon {
+    display: block;
+  }
+
   .statsDescription {
     display: flex;
     justify-content: space-between;
   }
 
-  .codingIcon {
-    display: block;
-  }
-
   .statsTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     width: 25ch;
     text-align: left;
   }
@@ -125,7 +126,7 @@
     width: 5rem;
   }
 
-  /* Stats Container - Stats Item */
+  /* Stats Container / Stats Item */
   .statsContainer {
     display: flex;
     gap: 8rem;
