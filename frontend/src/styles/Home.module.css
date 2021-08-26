@@ -71,6 +71,30 @@
   font-size: .6rem;
 }
 
+/* Learn Section */
+.learn {}
+
+.learnCover {}
+
+.learnImage {
+  width: 100%;
+}
+
+.learnDescription {
+  padding: 2rem;
+  text-align: center;
+}
+
+.learnTittle {
+  margin-bottom: 1rem;
+}
+
+.learnText {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+
+
 
 @media (min-width: 720px) {
   /* Hero */
@@ -143,5 +167,32 @@
 
   .statsText {
     font-size: .8rem;
+  }
+
+  /* Learn Section */
+  .learn {
+    display: flex;
+    height: 24rem;
+  }
+
+  .learnImage {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .learnDescription {
+    padding: 4rem;
+    text-align: left;
+  }
+
+  .learnTittle {
+    width: 20ch;
+    font-size: 2rem;
+  }
+
+  .learnText {
+    font-size: .9rem;
+    width: 80%;
+    line-height: 1.7;
   }
 }
