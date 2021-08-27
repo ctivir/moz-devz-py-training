@@ -3,6 +3,7 @@ import codingIcon from '../assets/icons/programing.svg';
 import mozdevz from '../assets/mozdevz.jpg';
 import CardContainer from '../components/CardContainer';
 import Header from '../components/Header';
+import Footer from '../components/Footer'
 import LogoContainer from '../components/LogoContainer';
 import StatsItem from '../components/StatsItem';
 import styles from '../styles/Home.module.css';
@@ -142,6 +143,7 @@ function Home() {
         {/* Container */}
         <LogoContainer />
       </section>
+      <Footer />
     </div>
   )
 }
